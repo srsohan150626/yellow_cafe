@@ -8,7 +8,7 @@
         
         .bg {
           /* The image used */
-          background-image: url("{{asset('web/img/tableabove10001499.jpg')}}");
+          background-image: url("{{URL::to('images/' . $background_image[0]->bg_image)}}");
         
           /* Full height */
           height: 100%; 
