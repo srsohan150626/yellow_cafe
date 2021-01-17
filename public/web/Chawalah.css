@@ -207,7 +207,7 @@ white-space: normal;
 .menucardlist{
   width: 24rem;
   opacity: 0.8;
-  top: 200px;
+  top: 150px;
   left: 12px;
 }
 @media (min-width: 320px) { 
@@ -220,7 +220,7 @@ white-space: normal;
   .menucardlist{
     width: 18rem;
     opacity: 0.8;
-    top: 200px;
+    top: 150px;
     left: 16px;
   }
 }
@@ -235,7 +235,7 @@ white-space: normal;
   .menucardlist{
     width: 21rem;
     opacity: 0.8;
-    top: 200px;
+    top: 150px;
     left: 16px;
   }
 }
@@ -249,7 +249,7 @@ white-space: normal;
   .menucardlist{
     width: 24rem;
     opacity: 0.8;
-    top: 200px;
+    top: 150px;
     left: 16px;
   }
 }
@@ -263,7 +263,7 @@ white-space: normal;
   .menucardlist{
     width: 46rem;
     opacity: 0.8;
-    top: 200px;
+    top: 150px;
     left: 16px;
   }
  } 
@@ -286,7 +286,7 @@ white-space: normal;
   .menucardlist{
     width: 45rem;
     opacity: 0.8;
-    top: 200px;
+    top: 150px;
     left: 16px;
   }
  }
@@ -303,7 +303,7 @@ white-space: normal;
   .menucardlist{
     width: 70rem;
     opacity: 0.8;
-    top: 250px;
+    top: 200px;
     left: 50px;
     right: 50px;
   }

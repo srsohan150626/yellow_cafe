@@ -47,7 +47,7 @@
             font-size: 18px;
             }
         .resslider{
-            top: 200px;
+            top: 150px;
             margin-left: 35px;
             margin-right: 35px;
         }
