@@ -91,7 +91,7 @@
                    
                     <div class="card-body">
                         <br>
-                      <h3 class="card-title text-center yellow_label"> <b class="gza" >YELLOW</b> </h3>
+                      <h3 class="card-title text-center yellow_label"> <b class="gza" >YELLOW CAFE</b> </h3>
                       <p class="card-text text-center vrr home_text_1">
                           @if (isset($hometext[0]->upper_text))
                           {{ strip_tags($hometext[0]->upper_text) }}
