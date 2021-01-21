@@ -56,7 +56,7 @@
             }
         }
        .resslidertopfixlist{
-            margin-top: 1%;
+            margin-top: 1.5%;
         }
         @media (min-width: 1200px) { 
                .resslidertopfixlist{
@@ -113,7 +113,7 @@
                     </div>
                   </div>
 
-                  <div class="card resslidertopfixlist" style="width: 18rem; opacity: 0.8;">
+                  <div class="card next resslidertopfixlist" style="width: 18rem; opacity: 0.8;">
                         @foreach ($categories as $item)
                         <span class="text-center vrr mt-3"><a  href="{{url('/menulist/'.$item->categories_id)}}" style="color: black;text-decoration:none"><b class="uprcse">{{ $item->categories_name }}</b></a> </span>
                         @endforeach

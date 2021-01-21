@@ -59,7 +59,7 @@
             }
         }
        .resslidertopfixlist{
-            margin-top: 1%;
+            margin-top: 1.5%;
         }
         @media (min-width: 1200px) { 
                .resslidertopfixlist{
@@ -99,7 +99,7 @@
               </div>
 
               
-                  <div class="card resslidertopfix" style="width: 18rem; opacity: 0.8;">
+                  <div class="card next resslidertopfix" style="width: 18rem; opacity: 0.8;">
                    
                     <div class="card-body">
                         <br>

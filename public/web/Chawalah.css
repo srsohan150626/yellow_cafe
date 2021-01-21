@@ -345,3 +345,13 @@ white-space: normal;
     margin-left: 5%;
     margin-right: 5%;
 }
+
+@media (min-width: 1200px) {
+  .newmenucatlist{
+    width: inherit;
+    opacity: 0.8;
+    margin-top: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+  }
