@@ -42,6 +42,7 @@
             top: 30px;
             right: 16px;
             font-size: 18px;
+            z-index: 9;
             }
         .resslider{
             margin-left: 4%;
