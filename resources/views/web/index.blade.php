@@ -24,18 +24,21 @@
             bottom: 8px;
             left: 16px;
             font-size: 18px;
+            z-index: 9;
             }
             .bottomright {
             position: absolute;
             bottom: 8px;
             right: 16px;
             font-size: 18px;
+            z-index: 9;
             }
             .topright {
             position: absolute;
             top: 8px;
             right: 16px;
             font-size: 18px;
+            z-index: 9;
             }
             .toprightbottom {
             position: absolute;
