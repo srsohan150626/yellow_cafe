@@ -7,7 +7,7 @@
       <a href="{{ url()->previous() }}"> <img class="dttoprightimgbottom" src="{{asset('web/img/new___icons_03_1604995966.png')}}" /></a>
     </div>
 
-    <div class="card text-center menucardlist">
+    <div class="card text-center newmenucatlist" >
           @foreach ($categories as $item)
           <span class="text-center vrr mt-3"><a href="{{url('/menulist/'.$item->categories_id)}}" style="color: black;text-decoration:none;"><b class="uprcse">{{ $item->categories_name }}</b></a> </span>
           @endforeach

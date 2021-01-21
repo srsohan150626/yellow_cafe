@@ -337,3 +337,11 @@ white-space: normal;
   display: inline-block;
   margin-left: 40px;
 }
+
+.newmenucatlist{
+    width: inherit;
+    opacity: 0.8;
+    margin-top: 12%;
+    margin-left: 5%;
+    margin-right: 5%;
+}

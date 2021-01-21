@@ -44,9 +44,8 @@
             font-size: 18px;
             }
         .resslider{
-            top: 100px;
-            margin-left: 35px;
-            margin-right: 35px;
+            margin-left: 4%;
+            margin-right: 5%;
         }
     </style>
     @endpush
@@ -73,7 +72,7 @@
         <div id="mySwipe" class="swipe resslider">
             <div class="swipe-wrap ">
             
-                <div class="card " style="width: 18rem; opacity: 0.8;">
+                <div class="card " style="width: 18rem; opacity: 0.8; margin-top: 12%;">
                    
                     <div class="card-body">
                         <br>
@@ -98,7 +97,7 @@
                     </div>
                   </div>
 
-                  <div class="card next" style="width: 18rem; opacity: 0.8;">
+                  <div class="card next" style="width: 18rem; opacity: 0.8; margin-top:1%;">
                         @foreach ($categories as $item)
                         <span class="text-center vrr mt-3"><a  href="{{url('/menulist/'.$item->categories_id)}}" style="color: black;text-decoration:none"><b class="uprcse">{{ $item->categories_name }}</b></a> </span>
                         @endforeach
