@@ -12,6 +12,7 @@ class HomeController extends Controller
         $categories= DB::table('categories')
                     ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
                     ->where('categories.categories_status',1)
+                    ->orderBy('categories.categories_id','ASC')
                     ->get();
 
         $hometext= DB::table('hometexts')
@@ -30,6 +31,7 @@ class HomeController extends Controller
         $categories= DB::table('categories')
                     ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
                     ->where('categories.categories_status',1)
+                    ->orderBy('categories.categories_id','ASC')
                     ->get();
         $hometext= DB::table('hometexts')
                 ->where('status',1)
@@ -56,6 +58,7 @@ class HomeController extends Controller
         $categories= DB::table('categories')
                     ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
                     ->where('categories.categories_status',1)
+                    ->orderBy('categories.categories_id','ASC')
                     ->get();
         //dd($categories);
         $cat_name= DB::table('categories_description')
@@ -74,6 +77,7 @@ class HomeController extends Controller
         $categories= DB::table('categories')
                     ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
                     ->where('categories.categories_status',1)
+                    ->orderBy('categories.categories_id','ASC')
                     ->get();
        // dd($categories);
        $hometext= DB::table('hometexts')
@@ -103,6 +107,7 @@ class HomeController extends Controller
         $categories= DB::table('categories')
         ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
         ->where('categories.categories_status',1)
+        ->orderBy('categories.categories_id','ASC')
         ->get();
 
         $background_image= DB::table('background_image')
@@ -145,6 +150,7 @@ class HomeController extends Controller
         $categories= DB::table('categories')
                     ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
                     ->where('categories.categories_status',1)
+                    ->orderBy('categories.categories_id','ASC')
                     ->get();
         $background_image= DB::table('background_image')
         ->where('status',1)
