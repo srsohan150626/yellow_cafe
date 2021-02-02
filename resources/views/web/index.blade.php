@@ -74,9 +74,9 @@
     <div class="bg test">
         <div class="">
         
-      
             <div class="bottomleft"> <a href="{{url('/beverages')}}"><img class="bottomleftimg" src="{{asset('web/img/ICONS-01B.png')}}"/></a>
             </div>
+>>>>>>> 35cce83d177462abf0dd07b75d5de72f68b6d28b
             <div class="bottomright"> <a href="{{url('/menucategory')}}"><img class="bottomrightimg menu3" src="{{asset('web/img/Food-01B.png')}}"/></a>
             </div>
             <div class="toprightbottom">
