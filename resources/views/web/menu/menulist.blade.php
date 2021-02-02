@@ -98,9 +98,9 @@
               <a href="{{ url()->previous() }}"> <img class="dttoprightimgbottom" src="{{asset('web/img/new___icons_03_1604995966.png')}}" /></a>
             </div>
 
-            <div class="overlayone">
+            {{-- <div class="overlayone">
               <img class="dttoprightimgbottomone" src="{{asset('web/img/new___icons_02_1604995967.png')}}" />
-            </div>
+            </div> --}}
 
             <div class="" style="top:0px;">
               {{-- <img class="imagesquare"  src="{{asset($item->item_image)}}"/> --}}
