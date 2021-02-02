@@ -6,7 +6,10 @@
     <div class="overlayhome">
       <a href="{{ url()->previous() }}"> <img class="dttoprightimgbottom" src="{{asset('web/img/new___icons_03_1604995966.png')}}" /></a>
     </div>
-
+    <div class="bevbottomleft"> <a href="{{url('/beverages')}}"><img class="bottomleftimg" src="{{asset('web/img/ICONS-01B.png')}}"/></a>
+    </div>
+    <div class="bevbottomright"> <a href="{{url('/menucategory')}}"><img class="bottomrightimg menu3" src="{{asset('web/img/Food-01B.png')}}"/></a>
+    </div>
     <div class="card text-center newmenucatlist" >
           @foreach ($categories as $item)
           <span class="text-center vrr mt-3"><a href="{{url('/menulist/'.$item->categories_id)}}" style="color: black;text-decoration:none;"><b class="uprcse">{{ $item->categories_name }}</b></a> </span>
@@ -19,3 +22,4 @@
 
 
   </div>
+ 

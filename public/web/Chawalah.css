@@ -12,6 +12,21 @@ right: 16px;
 font-size: 18px;
 z-index: 2;
 }
+.bevbottomleft {
+  position: fixed;
+  bottom: -75px;
+  left: 5px;
+  z-index: 9;
+  font-size: 18px;
+  }
+  .bevbottomright {
+    position: fixed;
+    bottom: -75px;
+    right: 5px;
+    font-size: 18px;
+    z-index: 9;
+  }
+
 .dttopright {
 position: fixed;
 bottom: 8px;
@@ -341,7 +356,7 @@ white-space: normal;
 .newmenucatlist{
     width: inherit;
     opacity: 0.8;
-    margin-top: 35%;
+    margin-top: 15%;
     margin-left: 5%;
     margin-right: 5%;
 }
