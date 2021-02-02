@@ -32,6 +32,7 @@
           height: 100%;
         }
       }
+	  
     </style>
 @endpush
 @section('contents')
@@ -52,7 +53,7 @@
 
           <div class="swiper-slide">
             <div class="overlay">
-                <a href="{{url('/menucategory')}}"> <img class="dttoprightimgbottom" src="{{asset('web/img/new___icons_03_1604995966.png')}}" /></a>
+                <a href="{{ url()->previous() }}"> <img class="dttoprightimgbottom" src="{{asset('web/img/new___icons_03_1604995966.png')}}" /></a>
             </div>
 
             {{-- <div class="overlayhome">
@@ -81,7 +82,7 @@
                     @endforeach
                     <br>
                     <br>
-                    <span class="vrr usermsg" style="font-size: larger;"><i class="fa fa-reply"></i> Swipe Left or Click on Menu <i class="fa fa fa-hand-pointer-o"></i> </span>
+                    <span class="vrr usermsg" style="font-size: larger;"><i class="fa fa-reply"></i> Swipe left or click on item <i class="fa fa fa-hand-pointer-o"></i> </span>
               </div>
             </div>
 
@@ -94,7 +95,7 @@
             </div>
 
             <div class="overlayhome">
-              <a href="{{url('/menucategory')}}"> <img class="dttoprightimgbottom" src="{{asset('web/img/new___icons_03_1604995966.png')}}" /></a>
+              <a href="{{ url()->previous() }}"> <img class="dttoprightimgbottom" src="{{asset('web/img/new___icons_03_1604995966.png')}}" /></a>
             </div>
 
             <div class="overlayone">

@@ -12,6 +12,8 @@ class HomeController extends Controller
         $categories= DB::table('categories')
                     ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
                     ->where('categories.categories_status',1)
+                    ->where('categories.categories_id','!=',26)
+                    ->where('categories.categories_id','!=',27)
                     ->orderBy('categories.categories_id','ASC')
                     ->get();
 
@@ -24,6 +26,20 @@ class HomeController extends Controller
                             ->get();
     //dd($background_image);
        return view('web.index',compact('categories','hometext','background_image'));
+    }
+
+    public function beverages()
+    {
+        $categories= DB::table('categories')
+                    ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
+                    ->where('categories.categories_status',1)
+                    ->whereIn('categories.categories_id',[26,27])
+                    ->get();
+       // dd($categories);
+        $background_image= DB::table('background_image')
+        ->where('status',1)
+        ->get();
+        return view('web.beverages.index',compact('categories','background_image'));
     }
 
     public function fastfood()
@@ -77,6 +93,8 @@ class HomeController extends Controller
         $categories= DB::table('categories')
                     ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
                     ->where('categories.categories_status',1)
+                    ->where('categories.categories_id','!=',26)
+                    ->where('categories.categories_id','!=',27)
                     ->orderBy('categories.categories_id','ASC')
                     ->get();
        // dd($categories);
@@ -104,11 +122,24 @@ class HomeController extends Controller
 
         $tot_item= count($menuitems);
 
-        $categories= DB::table('categories')
-        ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
-        ->where('categories.categories_status',1)
-        ->orderBy('categories.categories_id','ASC')
-        ->get();
+        if($id==26  || $id==27){
+            $categories= DB::table('categories')
+            ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
+            ->where('categories.categories_status',1)
+            ->whereIn('categories.categories_id',[26,27])
+            ->orderBy('categories.categories_id','ASC')
+            ->get();
+        }else{
+            $categories= DB::table('categories')
+            ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
+            ->where('categories.categories_status',1)
+            ->where('categories.categories_id','!=',26)
+            ->where('categories.categories_id','!=',27)
+            ->orderBy('categories.categories_id','ASC')
+            ->get();
+        }
+
+        
 
         $background_image= DB::table('background_image')
        ->where('status',1)
@@ -133,6 +164,7 @@ class HomeController extends Controller
                      ->where('menuitems.item_slug',$slug)
                      ->select('menuitems.*','categories.categories_id','categories_description.categories_name')
                      ->get();
+        $cat_id= $menuitemsindividual[0]->categories_id;
          
         //dd($slug);
         $menuitems= DB::table('menuitems')
@@ -147,11 +179,23 @@ class HomeController extends Controller
         //dd($menuitems);
         $tot_item= count($menuitems);
        // dd($tot_item);
-        $categories= DB::table('categories')
-                    ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
-                    ->where('categories.categories_status',1)
-                    ->orderBy('categories.categories_id','ASC')
-                    ->get();
+        if($cat_id>26){
+            $categories= DB::table('categories')
+            ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
+            ->where('categories.categories_status',1)
+            ->whereIn('categories.categories_id',[26,27])
+            ->orderBy('categories.categories_id','ASC')
+            ->get();
+        }else{
+            $categories= DB::table('categories')
+            ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
+            ->where('categories.categories_status',1)
+            ->where('categories.categories_id','!=',26)
+            ->where('categories.categories_id','!=',27)
+            ->orderBy('categories.categories_id','ASC')
+            ->get();
+        }
+       
         $background_image= DB::table('background_image')
         ->where('status',1)
         ->get();
