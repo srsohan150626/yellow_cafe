@@ -26,6 +26,21 @@ z-index: 2;
     font-size: 18px;
     z-index: 9;
   }
+.beveragebtleft{
+  position: fixed;
+  bottom: -88%;
+  left: 3%;
+  z-index: 9;
+  font-size: 18px;
+}
+
+.beveragebtright {
+  position: fixed;
+  bottom: -88%;
+  right: 3%;
+  font-size: 18px;
+  z-index: 9;
+}
 
 .dttopright {
 position: fixed;
@@ -359,6 +374,14 @@ white-space: normal;
     margin-top: 15%;
     margin-left: 5%;
     margin-right: 5%;
+}
+
+.beveragemenucatlist{
+  width: inherit;
+  opacity: 0.8;
+  margin-top: 58%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 @media (min-width: 1200px) {

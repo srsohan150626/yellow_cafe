@@ -153,6 +153,37 @@ class HomeController extends Controller
         return view('web.menu.menulist',compact('menuitems','tot_item','categories','background_image'));
     }
 
+    public function menulistbeverages($id)
+    {
+        $menuitems= DB::table('menuitems')
+        ->leftjoin('itemsto_categories','itemsto_categories.item_id','=','menuitems.item_id')
+        ->leftjoin('categories','categories.categories_id','=','itemsto_categories.categories_id')
+        ->leftjoin('categories_description','categories_description.categories_id','=','itemsto_categories.categories_id')
+         ->where('menuitems.item_status',1)
+         ->where('itemsto_categories.categories_id',$id)
+         ->select('menuitems.*','categories.categories_id','categories_description.categories_name')
+         ->get();
+
+        $tot_item= count($menuitems);
+
+        $categories= DB::table('categories')
+            ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
+            ->where('categories.categories_status',1)
+            ->whereIn('categories.categories_id',[26,27])
+            ->orderBy('categories.categories_id','ASC')
+            ->get();
+        $background_image= DB::table('background_image')
+        ->where('status',1)
+        ->get();
+
+        if($tot_item==0)
+        {
+            return view('web.menu.empty',compact('categories','background_image'));
+        }
+        
+        return view('web.menu.menulistbeverages',compact('menuitems','tot_item','categories','background_image'));
+        
+    }
     public function menudetailsnew($id,$slug)
     {
        $id= $id;

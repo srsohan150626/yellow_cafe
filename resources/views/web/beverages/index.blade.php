@@ -86,7 +86,7 @@
 
             <div class="card beveragecard">
                 @foreach ($categories as $item)
-                <span class="text-center vrr mt-3"><a  href="{{url('/menulist/'.$item->categories_id)}}" style="color: black;text-decoration:none"><b class="uprcse">{{ $item->categories_name }}</b></a> </span>
+                <span class="text-center vrr mt-3"><a  href="{{url('/menulistbeverages/'.$item->categories_id)}}" style="color: black;text-decoration:none"><b class="uprcse">{{ $item->categories_name }}</b></a> </span>
                 @endforeach
                 <small class="text-center vrr mt-4"><b><i class="fa fa fa-hand-pointer-o"></i> Click to view category</b></small>
                 <br>
