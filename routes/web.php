@@ -6,6 +6,7 @@ Route::get('/menucategory','HomeController@list');
 // Route::get('/menu/{id}','HomeController@menudetails');
 Route::get('/menu/{id}/{slug}','HomeController@menudetailsnew');
 Route::get('/menulist/{id}','HomeController@menulist');
+Route::get('/beverages','HomeController@beverages');
 
 Route::group(['namespace' => 'Web'], function () {
     Route::get('/drinks','DrinksHomeController@index');
