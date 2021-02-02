@@ -63,11 +63,11 @@
             }
         }
        .resslidertopfixlist{
-            margin-top: 1.5%;
+            margin-top: 5.5%;
         }
         @media (min-width: 1200px) { 
                .resslidertopfixlist{
-                margin-top: 0.5%;
+                margin-top: 1.5%;
             }
         }
     </style>
