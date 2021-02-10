@@ -74,7 +74,6 @@
               
               </div>
           </div>
-
           </div>
 
   @if ($tot_item>0)
@@ -129,6 +128,7 @@
         grabCursor: true,
         centeredSlides: true,
         slidesPerView: 'auto',
+        infinite: true,
         coverflowEffect: {
           rotate: 50,
           stretch: 0,
