@@ -322,6 +322,24 @@ white-space: normal;
  }
 
 
+
+ @media (min-width: 1024px) { 
+  .catcard{
+    width: 64rem;
+    opacity: 0.9;
+    /* top: 125px; */
+    /* left: 16px; */
+  }
+  .menucardlist{
+    width: 55rem;
+    opacity: 0.8;
+    top: 150px;
+    left: 16px;
+  }
+ }
+
+
+
 @media (min-width: 1200px) { 
   .catcard{
     width: 85rem;
