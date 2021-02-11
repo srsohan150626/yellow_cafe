@@ -240,6 +240,7 @@ white-space: normal;
   top: 150px;
   left: 12px;
 }
+
 @media (min-width: 320px) { 
   .catcard{
     width: 24rem;
@@ -272,6 +273,20 @@ white-space: normal;
 @media (min-width: 411px) { 
   .catcard{
     width: 28rem;
+    opacity: 0.9;
+    /* top: 125px; */
+    /* left: 17px; */
+  }
+  .menucardlist{
+    width: 24rem;
+    opacity: 0.8;
+    top: 150px;
+    left: 16px;
+  }
+}
+@media (min-width: 540px) { 
+  .catcard{
+    width: 34rem;
     opacity: 0.9;
     /* top: 125px; */
     /* left: 17px; */
@@ -342,7 +357,7 @@ white-space: normal;
 
 @media (min-width: 1200px) { 
   .catcard{
-    width: 85rem;
+    width: 95rem;
     opacity: 0.9;
     /* top: 125px; */
     /* left: 50px;
