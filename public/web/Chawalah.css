@@ -229,7 +229,7 @@ white-space: normal;
   to {-webkit-transform: rotateY(90deg);}
 } */
 .catcard{
-  width: 27rem;
+  width: 100%;
   opacity: 0.9;
   /* top: 125px; */
   /* left: 16px; */
@@ -242,12 +242,7 @@ white-space: normal;
 }
 
 @media (min-width: 320px) { 
-  .catcard{
-    width: 24rem;
-    opacity: 0.9;
-    /* top: 125px; */
-    /* left: 17px; */
-  }
+
   .menucardlist{
     width: 18rem;
     opacity: 0.8;
@@ -257,12 +252,7 @@ white-space: normal;
 }
 
 @media (min-width: 360px) { 
-  .catcard{
-    width: 25rem;
-    opacity: 0.9;
-    /* top: 125px; */
-    /* left: 16px; */
-  }
+ 
   .menucardlist{
     width: 21rem;
     opacity: 0.8;
@@ -271,12 +261,7 @@ white-space: normal;
   }
 }
 @media (min-width: 411px) { 
-  .catcard{
-    width: 28rem;
-    opacity: 0.9;
-    /* top: 125px; */
-    /* left: 17px; */
-  }
+
   .menucardlist{
     width: 24rem;
     opacity: 0.8;
@@ -285,12 +270,7 @@ white-space: normal;
   }
 }
 @media (min-width: 540px) { 
-  .catcard{
-    width: 34rem;
-    opacity: 0.9;
-    /* top: 125px; */
-    /* left: 17px; */
-  }
+
   .menucardlist{
     width: 24rem;
     opacity: 0.8;
@@ -299,12 +279,7 @@ white-space: normal;
   }
 }
 @media (min-width: 732px) { 
-  .catcard{
-    width: 74rem;
-    opacity: 0.9;
-    /* top: 125px; */
-    /* left: 14px; */
-  }
+ 
   .menucardlist{
     width: 46rem;
     opacity: 0.8;
@@ -312,22 +287,10 @@ white-space: normal;
     left: 16px;
   }
  } 
- @media (min-width: 720px) { 
-  .catcard{
-    width: 74rem;
-    opacity: 0.9;
-    /* top: 125px; */
-    /* left: 14px; */
-  }
-}
+
 
 @media (min-width: 992px) { 
-  .catcard{
-    width: 74rem;
-    opacity: 0.9;
-    /* top: 125px; */
-    /* left: 16px; */
-  }
+
   .menucardlist{
     width: 45rem;
     opacity: 0.8;
@@ -339,12 +302,7 @@ white-space: normal;
 
 
  @media (min-width: 1024px) { 
-  .catcard{
-    width: 74rem;
-    opacity: 0.9;
-    /* top: 125px; */
-    /* left: 16px; */
-  }
+
   .menucardlist{
     width: 55rem;
     opacity: 0.8;
@@ -356,13 +314,7 @@ white-space: normal;
 
 
 @media (min-width: 1200px) { 
-  .catcard{
-    width: 95rem;
-    opacity: 0.9;
-    /* top: 125px; */
-    /* left: 50px;
-    right: 50px; */
-  }
+
   .menucardlist{
     width: 70rem;
     opacity: 0.8;
