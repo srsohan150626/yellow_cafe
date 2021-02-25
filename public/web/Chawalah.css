@@ -14,18 +14,33 @@ z-index: 2;
 }
 .bevbottomleft {
   position: fixed;
-  bottom: -75px;
-  left: 5px;
+  bottom: -17%;
+  left: 4%;
   z-index: 9;
   font-size: 18px;
   } 
   .bevbottomright {
     position: fixed;
-    bottom: -75px;
-    right: 5px;
+    bottom: -17%;
+    right: 4%;
     font-size: 18px;
     z-index: 9;
   }
+  .newbevbottomleft {
+    position: fixed;
+    bottom: -87%;
+    left: 4%;
+    z-index: 9;
+    font-size: 18px;
+    } 
+    .newbevbottomright {
+      position: fixed;
+      bottom: -87%;
+      right: 4%;
+      font-size: 18px;
+      z-index: 9;
+    }
+
 .beveragebtleft{
   position: fixed;
   bottom: -88%;
@@ -73,7 +88,7 @@ font-size: 18px;
 }
 .toprightimgbottom {
         margin: 0px 0px 0px 0px;
-        width: 50px; height: 50px;
+        width: 60px; height: 60px;
         display: block;
 }    
 .dttoprightimg {

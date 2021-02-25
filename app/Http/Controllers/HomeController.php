@@ -149,8 +149,9 @@ class HomeController extends Controller
         {
             return view('web.menu.empty',compact('categories','background_image'));
         }
-        
-        return view('web.menu.menulist',compact('menuitems','tot_item','categories','background_image'));
+       $category_id= $id;
+      // dd($category_id);
+        return view('web.menu.menulist',compact('menuitems','tot_item','categories','background_image','category_id'));
     }
 
     public function menulistbeverages($id)
@@ -230,8 +231,8 @@ class HomeController extends Controller
         $background_image= DB::table('background_image')
         ->where('status',1)
         ->get();
-
-        return view('web.menu.menudetails',compact('menuitemsindividual','menuitems','tot_item','categories','background_image'));
+        $category_id= $id;
+        return view('web.menu.menudetails',compact('menuitemsindividual','menuitems','tot_item','categories','background_image','category_id'));
 
     }
 

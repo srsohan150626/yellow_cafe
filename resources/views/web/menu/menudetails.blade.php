@@ -5,7 +5,19 @@
       .transprnt{
         z-index: 1;
       }
-      .transbg{
+      .bg {
+          /* The image used */
+          background-image: url("{{URL::to('images/' . $background_image[0]->bg_image)}}");
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      /* .transbg{
         position: absolute;
         z-index: -1;
         top: 0;
@@ -27,12 +39,11 @@
         .transbg{
           height: 100%;
         }
-      }
+      } */
     </style>
 @endpush
 @section('contents')
-  <div class="transprnt test">
-        <div class="transbg"></div>
+  <div class="bg test">
 
         
     {{-- <div class="dtbottomleft">

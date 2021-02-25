@@ -6,38 +6,23 @@
       .transprnt{
         z-index: 1;
       }
-      .transbg{
-        position: absolute;
-        z-index: -1;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background: url("{{URL::to('images/' . $background_image[0]->bg_image)}}");
-        /* width: 100%; */
-        /* background-image: url("{{asset('web/img/tableabove10001499.jpg')}}"); */
-        height: 100%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      @media (min-width: 1200px) { 
-        .transbg{
-          height: 100%;
+      .bg {
+          /* The image used */
+          background-image: url("{{URL::to('images/' . $background_image[0]->bg_image)}}");
+        
+          /* Full height */
+          height: 100%; 
+        
+          /* Center and scale the image nicely */
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
-      }
-      @media (min-width: 720px) { 
-        .transbg{
-          height: 100%;
-        }
-      }
-	  
     </style>
 @endpush
 @section('contents')
-  <div class="transprnt test">
-        <div class="transbg"></div>
+  <div class="bg test">
+        {{-- <div class="transbg"></div> --}}
 
         
     {{-- <div class="dtbottomleft">
