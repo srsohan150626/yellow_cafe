@@ -198,7 +198,7 @@ class HomeController extends Controller
                      ->get();
         $cat_id= $menuitemsindividual[0]->categories_id;
          
-        //dd($slug);
+       // dd($cat_id);
         $menuitems= DB::table('menuitems')
                     ->leftjoin('itemsto_categories','itemsto_categories.item_id','=','menuitems.item_id')
                     ->leftjoin('categories','categories.categories_id','=','itemsto_categories.categories_id')
@@ -211,7 +211,7 @@ class HomeController extends Controller
         //dd($menuitems);
         $tot_item= count($menuitems);
        // dd($tot_item);
-        if($cat_id>26){
+        if($cat_id>=26){
             $categories= DB::table('categories')
             ->leftjoin('categories_description','categories.categories_id','=','categories_description.categories_id')
             ->where('categories.categories_status',1)
@@ -232,6 +232,7 @@ class HomeController extends Controller
         ->where('status',1)
         ->get();
         $category_id= $id;
+        //dd($categories);
         return view('web.menu.menudetails',compact('menuitemsindividual','menuitems','tot_item','categories','background_image','category_id'));
 
     }

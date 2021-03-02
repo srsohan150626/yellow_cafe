@@ -47,6 +47,13 @@
             font-size: 18px;
             z-index: 9;
             }
+            .topleft {
+            position: absolute;
+            top: 30px;
+            left: 16px;
+            font-size: 18px;
+            z-index: 9;
+            }
         .resslider{
             margin-left: 4%;
             margin-right: 5%;
@@ -72,7 +79,6 @@
     @section('contents')
     <div id="fakeLoader"></div>
     <div class="bg test">
-        <div class="">
         
             <div class="bottomleft"> <a href="{{url('/beverages')}}"><img class="bottomleftimg" src="{{asset('web/img/ICONS-01B.png')}}"/></a>
             </div>
@@ -81,7 +87,9 @@
             <div class="toprightbottom">
                 <a href="{{url('/')}}"> <img class="toprightimgbottom" src="{{asset('web/img/new___icons_01_1604995968.png')}}"/></a>
             </div>
-        </div>
+            <div class="topleft">
+                <a href="{{url('/menuitems')}}"><img class="topleftimg" src="{{asset('web/img/menu.jpg')}}"/></a>
+            </div>
     
         <div id="mySwipe" class="swipe resslider">
             <div class="swipe-wrap ">
