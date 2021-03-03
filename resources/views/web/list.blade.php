@@ -50,8 +50,15 @@
             font-size: 18px;
             z-index: 9;
             }
-        .resslider{
-             margin-left: 4%;
+            .topleft {
+            position: absolute;
+            top: 30px;
+            left: 16px;
+            font-size: 18px;
+            z-index: 9;
+            }
+            .resslider{
+            margin-left: 4%;
             margin-right: 5%;
         }
         .resslidertopfix{
@@ -88,6 +95,10 @@
             </div>
             <div class="toprightbottom">
                 <a href="{{url('/')}}"> <img class="toprightimgbottom" src="{{asset('web/img/new___icons_01_1604995968.png')}}"/></a>
+            </div>
+            <div class="topleft">
+                {{-- <a href="{{url('/menuitems')}}"><img class="topleftimg" src="{{asset('web/img/menu.jpg')}}"/></a> --}}
+                <a href="{{url('/menuitems')}}" class="btn  btn-sm" style="background-color: #fff;border-color: #B38B55;"><i class="fa fa-cutlery textmenu" aria-hidden="true"></i> <span class="textmenu vrr">Text Menu</span></a>
             </div>
         </div>
     
