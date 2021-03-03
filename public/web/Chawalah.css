@@ -518,3 +518,15 @@ padding-top: 60px;
   overflow: hidden;
 }
 
+.textmenu{
+  color: #B38B55;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.custombtn{
+  border-color: #B38B55;
+  background-color: #fff;
+}
+
